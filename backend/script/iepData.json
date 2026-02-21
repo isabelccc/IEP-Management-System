@@ -1,0 +1,62 @@
+[
+  {
+    "student_id": 1,
+    "student_number": "S1001",
+    "case_manager_email": "carla.nguyen@school.org",
+    "start_date": "2026-08-20 08:00:00",
+    "end_date": "2027-05-25 17:00:00",
+    "meeting_time": "2026-09-10 12:30:00",
+    "meeting_link": "https://zoom.us/j/9651001001",
+    "status": "draft"
+  },
+  {
+    "student_id": 2,
+    "student_number": "S1002",
+    "case_manager_email": "carla.nguyen@school.org",
+    "start_date": "2026-08-20 08:00:00",
+    "end_date": "2027-05-25 17:00:00",
+    "meeting_time": "2026-09-12 09:00:00",
+    "meeting_link": "https://zoom.us/j/9651001002",
+    "status": "review"
+  },
+  {
+    "student_id": 3,
+    "student_number": "S2001",
+    "case_manager_email": "carla.nguyen@school.org",
+    "start_date": "2026-08-20 08:00:00",
+    "end_date": "2027-05-25 17:00:00",
+    "meeting_time": "2026-02-15 13:15:00",
+    "meeting_link": "https://zoom.us/j/9652001001",
+    "status": "finalized"
+  },
+  {
+    "student_id": 4,
+    "student_number": "S2002",
+    "case_manager_email": "carla.nguyen@school.org",
+    "start_date": "2026-08-20 08:00:00",
+    "end_date": "2027-05-25 17:00:00",
+    "meeting_time": "2026-02-18 10:45:00",
+    "meeting_link": "https://zoom.us/j/9652002002",
+    "status": "draft"
+  },
+  {
+    "student_id": 5,
+    "student_number": "S3001",
+    "case_manager_email": "carla.nguyen@school.org",
+    "start_date": "2026-08-20 08:00:00",
+    "end_date": "2027-05-25 17:00:00",
+    "meeting_time": "2026-02-22 14:00:00",
+    "meeting_link": "https://zoom.us/j/9653001001",
+    "status": "review"
+  },
+  {
+    "student_id": 6,
+    "student_number": "S4001",
+    "case_manager_email": "carla.nguyen@school.org",
+    "start_date": "2026-08-20 08:00:00",
+    "end_date": "2027-05-25 17:00:00",
+    "meeting_time": "2026-02-25 11:30:00",
+    "meeting_link": "https://zoom.us/j/9654001001",
+    "status": "draft"
+  }
+]

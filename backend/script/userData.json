@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "school_id": 1,
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "email": "alice.johnson@school.org",
+      "password_hash": "$2b$10$9CADzfWKWLliqIWNv/PNDe3CKb7dr/PKLW3KYthB3VKqnJjP5EIDq",
+      "role": "admin",
+      "created_at": "2026-02-18T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "school_id": 1,
+      "first_name": "Brian",
+      "last_name": "Smith",
+      "email": "brian.smith@school.org",
+      "password_hash": "$2b$10$KIXIDYxX3kXnC6cF0h8U8e2Yb6h5t1X9pK0m7GJrH3zQp8v0GQm6K",
+      "role": "teacher",
+      "created_at": "2026-02-18T10:05:00Z"
+    },
+    {
+      "id": 3,
+      "school_id": 2,
+      "first_name": "Carla",
+      "last_name": "Nguyen",
+      "email": "carla.nguyen@school.org",
+      "password_hash": "$2b$10$KIXIDYxX3kXnC6cF0h8U8e2Yb6h5t1X9pK0m7GJrH3zQp8v0GQm6K",
+      "role": "case_manager",
+      "created_at": "2026-02-18T10:10:00Z"
+    },
+    {
+      "id": 4,
+      "school_id": 2,
+      "first_name": "David",
+      "last_name": "Martinez",
+      "email": "david.martinez@school.org",
+      "password_hash": "$2b$10$KIXIDYxX3kXnC6cF0h8U8e2Yb6h5t1X9pK0m7GJrH3zQp8v0Gm6K",
+      "role": "viewer",
+      "created_at": "2026-02-18T10:15:00Z"
+    }
+  ]

@@ -1,0 +1,56 @@
+[
+  {
+    "school_id": 1,
+    "student_number": "S1001",
+    "first_name": "Emma",
+    "last_name": "Brown",
+    "date_of_birth": "2015-04-12",
+    "grade_level": 5,
+    "guardian_contact": "Mia Brown - 217-555-2001"
+  },
+  {
+    "school_id": 1,
+    "student_number": "S1002",
+    "first_name": "Noah",
+    "last_name": "Davis",
+    "date_of_birth": "2014-09-03",
+    "grade_level": 6,
+    "guardian_contact": "Liam Davis - 217-555-2002"
+  },
+  {
+    "school_id": 2,
+    "student_number": "S2001",
+    "first_name": "Olivia",
+    "last_name": "Wilson",
+    "date_of_birth": "2013-01-25",
+    "grade_level": 7,
+    "guardian_contact": "Ava Wilson - 217-555-2003"
+  },
+  {
+    "school_id": 2,
+    "student_number": "S2002",
+    "first_name": "Ethan",
+    "last_name": "Taylor",
+    "date_of_birth": "2012-11-18",
+    "grade_level": 8,
+    "guardian_contact": "Sophia Taylor - 217-555-2004"
+  },
+  {
+    "school_id": 3,
+    "student_number": "S3001",
+    "first_name": "Mason",
+    "last_name": "Anderson",
+    "date_of_birth": "2009-07-09",
+    "grade_level": 10,
+    "guardian_contact": "Isabella Anderson - 217-555-2005"
+  },
+  {
+    "school_id": 4,
+    "student_number": "S4001",
+    "first_name": "Charlotte",
+    "last_name": "Thomas",
+    "date_of_birth": "2011-02-14",
+    "grade_level": 9,
+    "guardian_contact": "James Thomas - 217-555-2006"
+  }
+]

@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Lincoln Elementary School",
+      "district_name": "Springfield Public Schools",
+      "address": "123 Maple Street, Springfield, IL 62701",
+      "phone": "217-555-0101"
+    },
+    {
+      "name": "Roosevelt Middle School",
+      "district_name": "Springfield Public Schools",
+      "address": "456 Oak Avenue, Springfield, IL 62702",
+      "phone": "217-555-0102"
+    },
+    {
+      "name": "Jefferson High School",
+      "district_name": "Springfield Public Schools",
+      "address": "789 Pine Road, Springfield, IL 62703",
+      "phone": "217-555-0103"
+    },
+    {
+      "name": "Washington Special Education Center",
+      "district_name": "Springfield Public Schools",
+      "address": "321 Birch Lane, Springfield, IL 62704",
+      "phone": "217-555-0104"
+    }
+  ]
