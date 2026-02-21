@@ -7,6 +7,10 @@ Full-stack prototype for managing students and IEP meetings/events.
 - Auth: JWT
 - Main flows: login, students CRUD, IEP/event scheduling calendar, IEP list
 
+## UI Preview
+
+![IEP Management UI](frontend/src/assets/UI.png)
+
 ## Features
 
 - JWT login + `GET /api/auth/me`
