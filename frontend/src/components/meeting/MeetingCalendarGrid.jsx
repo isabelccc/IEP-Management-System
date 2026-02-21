@@ -52,6 +52,14 @@ export default function MeetingCalendarGrid({ ieps, selectedDate, onSelectDate, 
         onSelectDate?.(dateKey);
     };
 
+    const todayKey = (() => {
+        const d = new Date();
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+    })();
+
     const days = [
         ...Array.from({ length: firstDayIndex }, () => null),
         ...Array.from({ length: totalDaysInMonth }, (_, idx) => {
@@ -111,9 +119,11 @@ export default function MeetingCalendarGrid({ ieps, selectedDate, onSelectDate, 
                 </div>
 
                 <div className="meeting-grid-body">
-                    {days.map((cell, idx) => (
+                    {days.map((cell, idx) => {
+                        const isToday = cell?.dateKey === todayKey;
+                        return (
                         <div
-                            className="meeting-day-cell"
+                            className={`meeting-day-cell${isToday ? ' meeting-day-cell--today' : ''}`}
                             key={cell?.dateKey || `empty-${idx}`}
                             onClick={() => setActiveEvent(null)}
                         >
@@ -121,7 +131,7 @@ export default function MeetingCalendarGrid({ ieps, selectedDate, onSelectDate, 
                                 <>
                                     <button
                                         type="button"
-                                        className="meeting-day-number"
+                                        className={`meeting-day-number${isToday ? ' meeting-day-number--today' : ''}`}
                                         onClick={(evt) => {
                                             evt.stopPropagation();
                                             onSelectDate?.(cell.dateKey);
@@ -182,7 +192,7 @@ export default function MeetingCalendarGrid({ ieps, selectedDate, onSelectDate, 
                                 </>
                             ) : null}
                         </div>
-                    ))}
+                    ); })}
                 </div>
             </div>
         </div>

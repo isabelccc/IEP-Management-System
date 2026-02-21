@@ -1,17 +1,24 @@
 import { Trash2 } from 'lucide-react';
 
-function StudentsGrid({ students, pickAvatar, formatDateOnly, onDeleteStudent }) {
+function StudentsGrid({ students, pickAvatar, formatDateOnly, onDeleteStudent, onOpenStudent }) {
   return (
     <div className="students-grid">
       {students.map((s) => (
         <article className="students-grid-card" key={s.id}>
-          <div className="student-cell">
+          <button
+            type="button"
+            className="student-link-btn"
+            onClick={() => onOpenStudent?.(s.id)}
+            aria-label={`Open details for ${s.first_name} ${s.last_name}`}
+          >
+            <div className="student-cell">
             <img className="student-avatar" src={pickAvatar(s)} alt={`${s.first_name} ${s.last_name}`} />
             <div>
               <p className="student-name">{s.first_name} {s.last_name}</p>
               <p className="student-id">{s.student_number}</p>
             </div>
-          </div>
+            </div>
+          </button>
           <p><strong>School Name:</strong> {s.school_name || '-'}</p>
           <p><strong>Grade:</strong> {s.grade_level ?? '-'}</p>
           <p><strong>DOB:</strong> {formatDateOnly(s.date_of_birth)}</p>

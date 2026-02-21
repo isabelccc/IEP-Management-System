@@ -27,6 +27,54 @@ Full-stack prototype for managing students and IEP meetings/events.
   - `/students/new` opens Add Student flow
   - `/ieps/new` redirects to Meeting page add-event modal
 
+## AI-Powered Features (Planned Integration)
+
+This prototype is designed to incorporate AI assistance for high-frequency IEP authoring tasks while keeping final decisions with educators.
+
+### 1) Present Levels Summary Generator
+
+- **Purpose:** Draft a present levels narrative (academic achievement + functional performance).
+- **Inputs:** assessment scores, teacher observations, attendance/behavior notes (optional), recent progress updates.
+- **Output:** editable text draft aligned to present-levels sections.
+- **Human-in-the-loop:** case manager reviews and edits before saving.
+
+### 2) Measurable Goal Generator
+
+- **Purpose:** Produce draft annual goals from baseline data and identified needs.
+- **Inputs:** area of need, baseline statement, target timeframe.
+- **Output:** SMART-style goal options with suggested criteria and measurement method.
+- **Human-in-the-loop:** educator selects, revises, and approves goal language.
+
+### 3) Goal Quality Analyzer
+
+- **Purpose:** Evaluate drafted goals for clarity and measurability.
+- **Checks:** specificity, measurable criteria, realistic timeframe, baseline-target alignment.
+- **Output:** quality score/flags plus concrete rewrite suggestions.
+- **Human-in-the-loop:** recommendations are advisory only.
+
+### 4) Accommodation Suggestion Assistant
+
+- **Purpose:** Recommend accommodations linked to student needs and observed barriers.
+- **Inputs:** present levels, disability-related needs, teacher notes, assessment patterns.
+- **Output:** ranked accommodation suggestions with rationale and implementation notes.
+- **Human-in-the-loop:** staff decides final accommodations.
+
+### Suggested Workflow in This App
+
+1. Import or enter student assessments/observations.
+2. Generate present levels draft.
+3. Generate measurable goals from present levels.
+4. Run quality analyzer on selected goals.
+5. Generate accommodation suggestions.
+6. Save finalized content to IEP sections after staff review.
+
+### Safety and Compliance Notes
+
+- AI outputs are **draft assistance**, not automatic final decisions.
+- Keep review/approval by authorized staff before publishing.
+- Log generated content and edits for auditability.
+- Avoid exposing sensitive data outside approved systems and policies.
+
 ## Project Structure
 
 ```text

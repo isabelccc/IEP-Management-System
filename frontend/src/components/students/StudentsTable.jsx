@@ -1,6 +1,6 @@
 import { Trash2 } from 'lucide-react';
 
-function StudentsTable({ students, pickAvatar, formatDateOnly, onDeleteStudent }) {
+function StudentsTable({ students, pickAvatar, formatDateOnly, onDeleteStudent, onOpenStudent }) {
   return (
     <div className="students-table-wrap">
       <table className="students-table">
@@ -20,10 +20,17 @@ function StudentsTable({ students, pickAvatar, formatDateOnly, onDeleteStudent }
             <tr key={s.id}>
               <td>{s.student_number}</td>
               <td>
-                <div className="student-cell">
+                <button
+                  type="button"
+                  className="student-link-btn"
+                  onClick={() => onOpenStudent?.(s.id)}
+                  aria-label={`Open details for ${s.first_name} ${s.last_name}`}
+                >
+                  <div className="student-cell">
                   <img className="student-avatar" src={pickAvatar(s)} alt={`${s.first_name} ${s.last_name}`} />
                   <span>{s.first_name} {s.last_name}</span>
-                </div>
+                  </div>
+                </button>
               </td>
               <td>{s.grade_level}</td>
               <td>{s.school_name}</td>

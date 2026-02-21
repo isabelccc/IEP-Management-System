@@ -193,6 +193,7 @@ function StudentsPage() {
                     pickAvatar={pickAvatar}
                     formatDateOnly={formatDateOnly}
                     onDeleteStudent={handleDeleteStudent}
+                    onOpenStudent={(studentId) => navigate(`/students/${studentId}`)}
                 />
             ) : (
                 <StudentsGrid
@@ -200,6 +201,7 @@ function StudentsPage() {
                     pickAvatar={pickAvatar}
                     formatDateOnly={formatDateOnly}
                     onDeleteStudent={handleDeleteStudent}
+                    onOpenStudent={(studentId) => navigate(`/students/${studentId}`)}
                 />
             )}
 
